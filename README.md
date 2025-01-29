@@ -3,6 +3,15 @@
 <a href="https://codeclimate.com/github/Olga877/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/f8c8157f64e92242049e/maintainability" /></a>
 
 
+Links
+This project was built using these tools:
+
+Tool	Description
+uv	"An extremely fast Python package and project manager, written in Rust"
+Pytest	"A mature full-featured Python testing tool"
+ruff	"An extremely fast Python linter and code formatter, written in Rust"
+
+
 brain-even
 <script src="https://asciinema.org/a/KRIJBa2Wnvmc73EtjOIUzuYoH.js" id="asciicast-KRIJBa2Wnvmc73EtjOIUzuYoH" async="true"></script>
 
