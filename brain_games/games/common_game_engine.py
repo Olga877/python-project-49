@@ -1,8 +1,11 @@
 import prompt
-# name = prompt.string('May I have your name? ')
-# INSTRUCTIONS = 'Answer "yes"'
+name = prompt.string('May I have your name? ')
 
 
+def receive_instructions(get_instructions):
+    print(f'Hello, {name}!')
+    instructions = get_instructions()
+    print(instructions)
 
 def run_engine(get_question_and_answer):
     iterations_number = 3
@@ -16,4 +19,4 @@ def run_engine(get_question_and_answer):
        else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n Let's try again, {name}!")
             return
-    # print(f'Congratulations, {name}!')
+       print(f'Congratulations, {name}!')
