@@ -1,6 +1,6 @@
 import random
-
 import prompt
+
 MIN_NUMBER = 1
 MAX_NUMBER = 20 
 name = prompt.string('May I have your name? ')

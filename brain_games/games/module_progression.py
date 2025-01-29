@@ -1,10 +1,7 @@
 import random
 import prompt
 
-start_number = random.randint(1, 100)
-step = random.randint(1, 5)
-progression_length = random.randint(5, 10)
-progression_list = []
+
 name = prompt.string('May I have your name? ')
 
 def run_engine():
@@ -16,6 +13,7 @@ def run_engine():
       index_of_missing_number = final_list.index(missing_number)
       final_list[index_of_missing_number] = '..'
       correct_answer = str(missing_number)
+      final_list = ' '.join(map(str, final_list))
       question = f'Question: {final_list}'
 
       print(question)
@@ -29,9 +27,13 @@ def run_engine():
 
 
 def get_progression():
- for i in range(progression_length):
-    progression_list.append(start_number + (i-1)*step)
- return progression_list
+   start_number = random.randint(1, 100)
+   step = random.randint(1, 5)
+   progression_length = random.randint(5, 10)
+   progression_list = []
+   for i in range(progression_length):
+      progression_list.append(start_number + (i-1)*step)
+   return progression_list
 
 
 def run_progression_game():
