@@ -15,7 +15,7 @@ def is_prime(number):
     return number in PRIME_LIST
 
 
-def generate_question_and_answer_progression():
+def generate_question_and_answer_prime():
     given_number = random.randint(MIN_NUMBER, MAX_NUMBER)
     correct_answer = 'yes' if is_prime(given_number) else 'no'
     question = f'Question: {given_number}'
@@ -24,5 +24,5 @@ def generate_question_and_answer_progression():
 
 def run_prime_game(): 
     receive_instructions(generate_instructions)
-    run_engine(generate_question_and_answer_progression)
+    run_engine(generate_question_and_answer_prime)
     

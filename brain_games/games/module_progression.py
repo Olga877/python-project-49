@@ -1,29 +1,10 @@
 import random
-import prompt
+from brain_games.games.common_game_engine import run_engine, receive_instructions
 
 
-name = prompt.string('May I have your name? ')
-
-def run_engine():
-   iterations_number = 3
-   for _ in range(iterations_number):
-      final_list = get_progression()
-      
-      missing_number = random.choice(final_list)
-      index_of_missing_number = final_list.index(missing_number)
-      final_list[index_of_missing_number] = '..'
-      correct_answer = str(missing_number)
-      final_list = ' '.join(map(str, final_list))
-      question = f'Question: {final_list}'
-
-      print(question)
-      answer = prompt.string('Your answer: ')
-      if answer.lower() == correct_answer:
-            print("Correct!")
-      else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n Let's try again, {name}!")
-            return
-   print(f'Congratulations, {name}!')
+def generate_instructions():
+    instructions = 'What number is missing in the progression?' 
+    return instructions
 
 
 def get_progression():
@@ -36,11 +17,20 @@ def get_progression():
    return progression_list
 
 
+def generate_question_and_answer_progression():
+   final_list = get_progression()
+   missing_number = random.choice(final_list)
+   index_of_missing_number = final_list.index(missing_number)
+   final_list[index_of_missing_number] = '..'
+   correct_answer = str(missing_number)
+   final_list = ' '.join(map(str, final_list))
+   question = f'Question: {final_list}'
+   return correct_answer, question
+
+
 def run_progression_game():
-    print(f'Hello, {name}!')
-    print('What number is missing in the progression?')
-   
-    run_engine()
+    receive_instructions(generate_instructions)
+    run_engine(generate_question_and_answer_progression)
  
 
 
