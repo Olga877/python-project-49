@@ -5,9 +5,7 @@
 
 
 brain-even
-```
 <script src="https://asciinema.org/a/KRIJBa2Wnvmc73EtjOIUzuYoH.js" id="asciicast-KRIJBa2Wnvmc73EtjOIUzuYoH" async="true"></script>
-```
 
 brain-calc
 <script src="https://asciinema.org/a/cMNF7SIZeVdvav4NuBuveGjfV.js" id="asciicast-cMNF7SIZeVdvav4NuBuveGjfV" async="true"></script>
