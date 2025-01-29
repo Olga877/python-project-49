@@ -1,6 +1,9 @@
 import random
-from brain_games.games.common_game_engine import run_engine, receive_instructions
 
+from brain_games.games.common_game_engine import (
+    receive_instructions,
+    run_engine,
+)
 
 MIN_NUMBER = 1
 MAX_NUMBER = 20 

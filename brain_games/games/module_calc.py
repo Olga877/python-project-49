@@ -1,7 +1,12 @@
 import random
-from brain_games.games.common_game_engine import run_engine, receive_instructions
+
+from brain_games.games.common_game_engine import (
+    receive_instructions,
+    run_engine,
+)
 
 OPERATORS = ('+', '-', '*')
+
 
 def generate_instructions():
     instructions = 'What is the result of the expression?' 
@@ -17,7 +22,6 @@ def generate_question_and_answer_calc():
     correct_answer = str(result)
     question = f'Question: {math_expression}'
     return correct_answer, question
-
 
 
 def run_calc_game():

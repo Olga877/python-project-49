@@ -1,10 +1,16 @@
-import random
 import math
-from brain_games.games.common_game_engine import run_engine, receive_instructions
+import random
+
+from brain_games.games.common_game_engine import (
+    receive_instructions,
+    run_engine,
+)
+
 
 def generate_instructions():
     instructions = 'Find the greatest common divisor of given numbers.' 
     return instructions
+
 
 def generate_question_and_answer_progression():
     num1 = random.randint(1, 30)
