@@ -15,7 +15,7 @@ def generate_instructions():
 def generate_question_and_answer_progression():
     num1 = random.randint(1, 30)
     num2 = random.randint(1, 30)
-    given_numbers = num1, num2
+    given_numbers = f'{num1} {num2}'
     correct_answer = str(math.gcd(num1, num2))
     question = f'Question: {given_numbers}'
     return correct_answer, question
