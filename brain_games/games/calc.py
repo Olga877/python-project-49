@@ -4,7 +4,6 @@ from brain_games.engine import (
     receive_instructions,
     run_engine,
 )
-
 from brain_games.random_number import get_random_number
 
 
@@ -15,6 +14,7 @@ def get_random_math_sign_and_result(first_num, second_num):
         ('*', first_num * second_num)
     ])
 
+
 def get_math_question_and_result():
     num1, num2 = get_random_number(), get_random_number()
     math_operator, result = get_random_math_sign_and_result(num1, num2)
@@ -22,6 +22,7 @@ def get_math_question_and_result():
     correct_answer = str(result)
     question = f'Question: {math_expression}'
     return correct_answer, question
+
 
 def generate_instructions():
     instructions = 'What is the result of the expression?' 

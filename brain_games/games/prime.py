@@ -2,17 +2,17 @@ from brain_games.engine import (
     receive_instructions,
     run_engine,
 )
-
-from brain_games.random_number import get_random_number 
+from brain_games.random_number import get_random_number
 
 
 def generate_instructions():
-    instructions = 'Answer "yes" if given number is prime. Otherwise answer "no".' 
+    instructions = ('Answer "yes" if given number is prime.'
+                    'Otherwise answer "no".')
     return instructions
 
 
 def is_prime(n):
-    for i in range(2, int(n**0.5)+1):
+    for i in range(2, int(n**0.5) + 1):
         if n % i == 0:
             return False
         

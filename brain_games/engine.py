@@ -10,7 +10,6 @@ def receive_instructions(get_instructions):
     print(f'Hello, {name}!\n{instructions}')
     
 
-
 def run_engine(get_question_and_answer):
     for _ in range(ROUNDS_NUMBER):
         correct_answer, question = get_question_and_answer()
