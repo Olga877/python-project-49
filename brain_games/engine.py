@@ -2,16 +2,17 @@ import prompt
 
 name = prompt.string('May I have your name? ')
 
+ROUNDS_NUMBER = 3
+
 
 def receive_instructions(get_instructions):
-    print(f'Hello, {name}!')
     instructions = get_instructions()
-    print(instructions)
+    print(f'Hello, {name}!\n{instructions}')
+    
 
 
 def run_engine(get_question_and_answer):
-    iterations_number = 3
-    for _ in range(iterations_number):
+    for _ in range(ROUNDS_NUMBER):
         correct_answer, question = get_question_and_answer()
 
         print(question)
@@ -19,6 +20,8 @@ def run_engine(get_question_and_answer):
         if answer.lower() == correct_answer:
             print("Correct!")
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n Let's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(."
+                  f"Correct answer was '{correct_answer}'.\n" 
+                  f" Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')

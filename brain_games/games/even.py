@@ -1,12 +1,8 @@
-import random
-
-from brain_games.games.common_game_engine import (
+from brain_games.engine import (
     receive_instructions,
     run_engine,
 )
-
-MIN_NUMBER = 1
-MAX_NUMBER = 20 
+from brain_games.random_number import get_random_number 
 
 
 def generate_instructions():
@@ -18,8 +14,8 @@ def is_even(number):
     return number % 2 == 0
 
 
-def generate_question_and_answer_even():
-    correct_number = random.randint(MIN_NUMBER, MAX_NUMBER)
+def get_math_question_and_result():
+    correct_number = get_random_number()
     correct_answer = 'yes' if is_even(correct_number) else 'no'
     question = f'Question: {correct_number}'
 
@@ -28,6 +24,6 @@ def generate_question_and_answer_even():
 
 def run_even_game():
     receive_instructions(generate_instructions)
-    run_engine(generate_question_and_answer_even)
+    run_engine(get_math_question_and_result)
     
 

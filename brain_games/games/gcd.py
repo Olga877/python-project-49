@@ -1,10 +1,11 @@
 import math
-import random
 
-from brain_games.games.common_game_engine import (
+from brain_games.engine import (
     receive_instructions,
     run_engine,
 )
+
+from brain_games.random_number import get_random_number 
 
 
 def generate_instructions():
@@ -12,9 +13,8 @@ def generate_instructions():
     return instructions
 
 
-def generate_question_and_answer_progression():
-    num1 = random.randint(1, 30)
-    num2 = random.randint(1, 30)
+def get_math_question_and_result():
+    num1, num2 = get_random_number(), get_random_number()
     given_numbers = f'{num1} {num2}'
     correct_answer = str(math.gcd(num1, num2))
     question = f'Question: {given_numbers}'
@@ -23,5 +23,5 @@ def generate_question_and_answer_progression():
 
 def run_gcd_game():
     receive_instructions(generate_instructions)
-    run_engine(generate_question_and_answer_progression)
+    run_engine(get_math_question_and_result)
  
