@@ -5,6 +5,7 @@
 
 
 brain-even
+[![asciicast](https://asciinema.org/a/https://asciinema.org/a/KRIJBa2Wnvmc73EtjOIUzuYoH.js)](https://asciinema.org/a/https://asciinema.org/a/KRIJBa2Wnvmc73EtjOIUzuYoH.js)
 <script src="https://asciinema.org/a/KRIJBa2Wnvmc73EtjOIUzuYoH.js" id="asciicast-KRIJBa2Wnvmc73EtjOIUzuYoH" async="true"></script>
 
 brain-calc
