@@ -6,8 +6,7 @@ from brain_games.random_number import get_random_number
 
 
 def generate_instructions():
-    instructions = ('Answer "yes" if given number is prime.'
-                    'Otherwise answer "no".')
+    instructions = ('Answer "yes" if given number is prime. '                     'Otherwise answer "no".')
     return instructions
 
 
