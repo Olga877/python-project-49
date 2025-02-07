@@ -29,12 +29,12 @@ make install
 
 ### Запуск
 
-brain-games
-brain-even 
-brain-calc
-brain-gcd
-brain-progression
-brain-prime
+brain-games  
+brain-even   
+brain-calc  
+brain-gcd  
+brain-progression  
+brain-prime  
 
 ### Удаление
 
