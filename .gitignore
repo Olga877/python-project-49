@@ -1,5 +1,6 @@
 .env
-.dist
+dist/
 .ruff_cache
-.__pycache__
+__pycache__
 hello.py
+.venv
