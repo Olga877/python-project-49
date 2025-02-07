@@ -11,9 +11,11 @@ def generate_instructions():
     return instructions
 
 
-def is_prime(n):
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
+def is_prime(number):
+    if number < 2:
+        return False
+    for i in range(2, int(number**0.5) + 1):
+        if number % i == 0:
             return False
         
     return True
