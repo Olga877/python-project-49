@@ -18,4 +18,4 @@ brain-progression
 <script src="https://asciinema.org/a/WE8WstMGKBXeQ5NMcOTzR3UM4.js" id="asciicast-WE8WstMGKBXeQ5NMcOTzR3UM4" async="true"></script>
 
 brain-prime
-<script src="https://asciinema.org/a/IhUlt7kENvRbOE6DCgaM9Piy8.js" id="asciicast-IhUlt7kENvRbOE6DCgaM9Piy8" async="true"></script>
+[![asciicast](https://asciinema.org/a/IhUlt7kENvRbOE6DCgaM9Piy8.svg)](https://asciinema.org/a/IhUlt7kENvRbOE6DCgaM9Piy8)
