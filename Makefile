@@ -1,5 +1,7 @@
 install:
 	uv sync
+uninstall:
+	uv tool uninstall hexlet-code
 brain-games:
 	uv run brain-games
 brain-even:
