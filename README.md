@@ -1,34 +1,38 @@
-# Python-project Brain Games (Игры разума)  
+# Python-project Brain Games 
 
-### Описание
+[![Github Actions Status](https://github.com/hexlet-boilerplates/python-package/workflows/Python%20CI/badge.svg)](https://github.com/hexlet-boilerplates/python-package/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/maintainability)](https://codeclimate.com/github/hexlet-boilerplates/python-package/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/df66c0cbbeca7d822f23/test_coverage)](https://codeclimate.com/github/hexlet-boilerplates/python-package/test_coverage)
 
-Пользователю предлагается 5 математических игр и 1 игра-приветствие:  
 
-| Название                                                               | Суть игры                                                |
+### Description
+
+5 math games and 1 greeting:  
+
+| Name                                                                   | Description                                                |
 |------------------------------------------------------------------------|---------------------------------------------------------|
-| brain-games                                                            | Предлагается ввести имя и получить в ответ приветствие |
-| brain-even                                                             | Пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное:        |
-| brain-calc                                                             | Пользователю показывается случайное математическое выражение, например, 35 + 16, которое нужно вычислить и записать правильный ответ.
-| brain-gcd                                                              | Пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
-| brain-progression                                                      | Пользователю показывается ряд чисел, который образует арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
-| brain-prime                                                            | Пользователю показывается случайное число. И ему нужно ответить yes, если число простое, или no — если оно не является простым.
+| brain-games                                                            | Enter your name and receive a response |
+| brain-even                                                             | The user is shown a random number. And he needs to answer *yes* if the number is even, or *no* if it’s odd.        |
+| brain-calc                                                             | The user is shown a random mathematical expression. The user should calculate and enter the result.
+| brain-gcd                                                              | The user is shown two random numbers. The user should calculate and enter the greatest common divisor of these numbers.
+| brain-progression                                                      | The user is shown a series of numbers that forms an arithmetic progression by replacing any of the numbers with two dots. The user should enter this number.
+| brain-prime                                                            | The user is shown a random number. The user needs to answer *yes* if the number is prime, or *no* if it is not prime.
 
 
 ### Стек используемых технологий
 
 | Инструмент                                                             | Описание                                                |
 |------------------------------------------------------------------------|---------------------------------------------------------|
-| [uv](https://docs.astral.sh/uv/)                                       | "Чрезвычайно быстрый пакетный менеджер Python, написанный на Rust." |
-| [Pytest](https://pytest.org)                                           | "Посностью настроенный инструмент тестирования."            |
-| [ruff](https://docs.astral.sh/ruff/)  (version 0.8.6)                  | "Чрезвычайно быстрый линтер и форматировщик кода Python, написанный на Rust."
+| [uv](https://docs.astral.sh/uv/)                                       | "An extremely fast Python package and project manager, written in Rust" |
+| [ruff](https://docs.astral.sh/ruff/)  (version 0.8.6)                  | "An extremely fast Python linter and code formatter, written in Rust"|
 
-### Установка
+### Setup
 
 ```bash
 make install
 ```
 
-### Запуск
+### Run
 
 brain-games  
 brain-even   
@@ -37,7 +41,7 @@ brain-gcd
 brain-progression  
 brain-prime  
 
-### Удаление
+### Uninstall
 
 ```bash
 make uninstall
@@ -57,3 +61,7 @@ brain-progression
 
 brain-prime
 [![asciicast](https://asciinema.org/a/IhUlt7kENvRbOE6DCgaM9Piy8.svg)](https://asciinema.org/a/IhUlt7kENvRbOE6DCgaM9Piy8)
+
+
+
+
