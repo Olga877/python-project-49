@@ -19,9 +19,9 @@
 | brain-prime                                                            | The user is shown a random number. The user needs to answer *yes* if the number is prime, or *no* if it is not prime.
 
 
-### Стек используемых технологий
+### Tools
 
-| Инструмент                                                             | Описание                                                |
+| Tool                                                                   | Description                                                |
 |------------------------------------------------------------------------|---------------------------------------------------------|
 | [uv](https://docs.astral.sh/uv/)                                       | "An extremely fast Python package and project manager, written in Rust" |
 | [ruff](https://docs.astral.sh/ruff/)  (version 0.8.6)                  | "An extremely fast Python linter and code formatter, written in Rust"|
