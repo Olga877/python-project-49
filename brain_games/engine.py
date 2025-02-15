@@ -1,16 +1,12 @@
 import prompt
 
-name = prompt.string('May I have your name? ')
-
-ROUNDS_NUMBER = 3
+from brain_games.const import ROUNDS_NUMBER
 
 
-def receive_instructions(get_instructions):
-    instructions = get_instructions()
-    print(f'Hello, {name}!\n{instructions}')
-    
+def run_engine(get_question_and_answer, game_instruction):
+    name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
+    print(f'Hello, {name}!\n{game_instruction}')
 
-def run_engine(get_question_and_answer):
     for _ in range(ROUNDS_NUMBER):
         correct_answer, question = get_question_and_answer()
 

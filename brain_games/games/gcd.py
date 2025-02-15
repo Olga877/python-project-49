@@ -1,10 +1,8 @@
 import math
 
-from brain_games.engine import (
-    receive_instructions,
-    run_engine,
-)
-from brain_games.random_number import get_random_number
+from brain_games.const import GCD_INSTRUCTIONS
+from brain_games.engine import run_engine
+from brain_games.utils import get_random_number
 
 
 def generate_instructions():
@@ -21,5 +19,4 @@ def get_math_question_and_result():
 
 
 def run_gcd_game():
-    receive_instructions(generate_instructions)
-    run_engine(get_math_question_and_result)
+    run_engine(get_math_question_and_result, GCD_INSTRUCTIONS)

@@ -1,10 +1,8 @@
 import random
 
-from brain_games.engine import (
-    receive_instructions,
-    run_engine,
-)
-from brain_games.random_number import get_random_number
+from brain_games.const import CALC_INSTRUCTIONS
+from brain_games.engine import run_engine
+from brain_games.utils import get_random_number
 
 
 def get_random_math_sign_and_result(first_num, second_num):
@@ -30,5 +28,4 @@ def generate_instructions():
 
 
 def run_calc_game():
-    receive_instructions(generate_instructions)
-    run_engine(get_math_question_and_result)
+    run_engine(get_math_question_and_result, CALC_INSTRUCTIONS)
