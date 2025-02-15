@@ -10,7 +10,9 @@ def get_math_question_and_result():
     progression_length = random.randint(5, 10)
     index_of_missing_number = random.randint(0, progression_length - 1)
     missed_number = start_number + step * index_of_missing_number
-    progression = ' '.join('..' if i == index_of_missing_number else str(start_number + i * step) for i in range(progression_length))
+    progression = ' '.join('..' if i == index_of_missing_number else str
+                           (start_number + i * step) for i in range
+                           (progression_length))
     correct_answer = str(missed_number)
     question = f'Question: {progression}'
     return correct_answer, question
