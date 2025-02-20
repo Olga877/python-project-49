@@ -12,10 +12,9 @@ def generate_instructions():
 
 def get_math_question_and_result():
     num1, num2 = get_random_number(), get_random_number()
-    given_numbers = f'{num1} {num2}'
+    math_expression = f'{num1} {num2}'
     correct_answer = str(math.gcd(num1, num2))
-    question = f'Question: {given_numbers}'
-    return correct_answer, question
+    return correct_answer, math_expression
 
 
 def run_gcd_game():

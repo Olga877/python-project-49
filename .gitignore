@@ -3,4 +3,5 @@ env/
 dist/
 .ruff_cache
 __pycache__/
+brain_games/games/__pycache__/
 .venv

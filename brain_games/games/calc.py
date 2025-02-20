@@ -18,8 +18,7 @@ def get_math_question_and_result():
     math_operator, result = get_random_math_sign_and_result(num1, num2)
     math_expression = f'{num1} {math_operator} {num2}'
     correct_answer = str(result)
-    question = f'Question: {math_expression}'
-    return correct_answer, question
+    return correct_answer, math_expression
 
 
 def generate_instructions():

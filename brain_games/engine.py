@@ -8,9 +8,9 @@ def run_engine(get_question_and_answer, game_instruction):
     print(f'Hello, {name}!\n{game_instruction}')
 
     for _ in range(ROUNDS_NUMBER):
-        correct_answer, question = get_question_and_answer()
+        correct_answer, math_expression = get_question_and_answer()
 
-        print(question)
+        print(f'Question: {math_expression}')
         answer = prompt.string('Your answer: ')
         if answer.lower() == correct_answer:
             print("Correct!")

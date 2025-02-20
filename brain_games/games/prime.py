@@ -20,12 +20,10 @@ def is_prime(number):
 
 
 def get_math_question_and_result():
-    given_number = get_random_number()
-    correct_answer = 'yes' if is_prime(given_number) else 'no'
-    question = f'Question: {given_number}'
-    return correct_answer, question
+    math_expression = get_random_number()
+    correct_answer = 'yes' if is_prime(math_expression) else 'no'
+    return correct_answer, math_expression
 
 
 def run_prime_game(): 
     run_engine(get_math_question_and_result, PRIME_INSTRUCTIONS)
-    
