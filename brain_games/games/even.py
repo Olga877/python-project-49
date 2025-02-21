@@ -3,11 +3,6 @@ from brain_games.engine import run_engine
 from brain_games.utils import get_random_number
 
 
-def generate_instructions():
-    instructions = 'Answer "yes" if the number is even, otherwise answer "no".' 
-    return instructions
-
-
 def is_even(number):
     return number % 2 == 0
 

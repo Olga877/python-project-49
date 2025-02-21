@@ -3,12 +3,6 @@ from brain_games.engine import run_engine
 from brain_games.utils import get_random_number
 
 
-def generate_instructions():
-    instructions = ('Answer "yes" if given number is prime. '
-    'Otherwise answer "no".')
-    return instructions
-
-
 def is_prime(number):
     if number < 2:
         return False
