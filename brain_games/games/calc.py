@@ -21,10 +21,5 @@ def get_math_question_and_result():
     return correct_answer, math_expression
 
 
-def generate_instructions():
-    instructions = 'What is the result of the expression?' 
-    return instructions
-
-
 def run_calc_game():
     run_engine(get_math_question_and_result, CALC_INSTRUCTIONS)
